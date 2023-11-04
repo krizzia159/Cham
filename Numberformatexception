@@ -1,0 +1,28 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.numberexceptionproject3;
+import java.util.Scanner;
+/**
+ *
+ * @author NATANIEL
+ */
+public class Numberexceptionproject3 {
+
+    public static void main(String[] args) {
+       try{
+		    Scanner scan =new Scanner(System.in);
+		    System.out.print("Enter a number :");
+		    String a=scan.nextLine();
+		    
+		    
+		    int b =Integer.parseInt(a);
+		    System.out.print(b + " is a number");
+		    }
+		    catch(NumberFormatException e){
+		        System.out.print("Number Exception detected");
+		        
+		    }
+    }
+}
